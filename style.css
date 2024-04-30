@@ -14,8 +14,160 @@
     "question-25 question-26 question-27 question-28 question-29 question-30"
     ". . . . . .";
 }
-/* added correct spacing to my container grid layout */
+/* Added correct spacing to my container grid layout. */
 
-.Category-1 { grid-area: Category-1; }
+.Category-1 { grid-area: Category-1;
+    color: white;
+}
 
-.Category-2 { grid-area: Category-2; }
+.Category-2 { grid-area: Category-2; 
+    color: white;
+}
+
+.Category-3 { grid-area: Category-3;
+    color: white;
+}
+
+.Category-4 { grid-area: Category-4; 
+    color: white;
+}
+
+.Category-5 { grid-area: Category-5; 
+    color: white;
+}
+
+.Category-6 { grid-area: Category-6; 
+    color: white;
+}
+
+.question-1 {
+    color: gold;
+}
+
+.question-2 {
+    color: gold;
+}
+
+.question-3 {
+    color: gold;
+}
+
+.question-4 {
+    color: gold;
+}
+
+.question-5 {
+    color: gold;
+}
+
+.question-6 {
+    color: gold;
+}
+
+.question-7 {
+    color: gold;
+}
+
+.question-8 {
+    color: gold;
+}
+
+.question-9 {
+    color: gold;
+}
+
+.question-10 {
+    color: gold;
+}
+
+.question-11 {
+    color: gold;
+}
+
+.question-12 {
+    color: gold;
+}
+
+.question-13 {
+    color: gold;
+}
+
+.question-14 {
+    color: gold;
+}
+
+.question-15 {
+    color: gold;
+}
+
+.question-16 {
+    color: gold;
+}
+
+.question-17 {
+    color: gold;
+}
+
+.question-18 {
+    color: gold;
+}
+
+.question-19 {
+    color: gold;
+}
+
+.question-20 {
+    color: gold;
+}
+
+.question-21 {
+    color: gold;
+}
+
+.question-22 {
+    color: gold;
+}
+
+.question-23 {
+    color: gold;
+}
+
+.question-24 {
+    color: gold;
+}
+
+.question-25 {
+    color: gold;
+}
+
+.question-26 {
+    color: gold;
+}
+
+.question-27 {
+    color: gold;
+}
+
+.question-28 {
+    color: gold;
+}
+
+.question-29 {
+    color: gold;
+}
+
+.question-30 {
+    color: gold;
+}
+/* Added styles to my constainer elements. There is 
+probably a less tedious way to do so but this will work for now.
+*/ 
+
+.container div {
+    padding: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    text-align: center;
+    background-color: blue;
+    font-size: 40px;
+}
+/* Added basic styles to my container grid layout. */

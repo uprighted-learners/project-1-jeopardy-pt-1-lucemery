@@ -1,0 +1,21 @@
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "Category-1 Category-2 Category-3 Category-4 Category-5 Category-6"
+    "question-1 question-2 question-3 question-4 question-5 question-6"
+    "question-7 question-8 question-9 question-10 question-11 question-12"
+    "question-13 question-14 question-15 question-16 question-17 question-18"
+    "question-19 question-20 question-21 question-22 question-23 question-24"
+    "question-25 question-26 question-27 question-28 question-29 question-30"
+    ". . . . . .";
+}
+/* added correct spacing to my container grid layout */
+
+.Category-1 { grid-area: Category-1; }
+
+.Category-2 { grid-area: Category-2; }

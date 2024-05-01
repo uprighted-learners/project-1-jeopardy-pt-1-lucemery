@@ -1,3 +1,36 @@
+body {
+    background-color: rgb(31, 67, 189);
+}
+
+.headers {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    background-color: rgb(51, 77, 211);
+    display: flex;
+    grid-template-rows: 2fr 2fr;
+    padding: 5px;
+}
+
+.footer {
+    display: block;
+    color: white;
+    background-color: rgb(60, 60, 100);
+    border: 3px solid black;
+    text-align: center;
+    font-size: 40px;
+    
+}
 .container {
     width: 100%;
     display: grid;
@@ -171,3 +204,12 @@ probably a less tedious way to do so but this will work for now.
     font-size: 40px;
 }
 /* Added basic styles to my container grid layout. */
+
+.container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+/* Centered my .container div */

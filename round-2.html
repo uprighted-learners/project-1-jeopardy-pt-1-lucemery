@@ -6,12 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
     <title>Jeopardy</title>
-    <script src="./scripts/index.js" type="module"></script>
-  </head>
-  <body>
+  <style>
+    .round-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .headers {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+
+  <script src="./scripts/index.js" type="module"></script>
+</head>
+<body>
+    <div class="headers">
     <header>Second Round</header>
 
     <h1>Player Turn</h1>
+    </div>
 
     <div class="container">
       <div class="Category-1">Category</div>
@@ -52,6 +70,7 @@
       <div class="question-30">1000</div>
     </div>
   
+<div class="round-info">
     <textarea name="message" id="input-box"></textarea>
 
     <div>
@@ -60,21 +79,26 @@
     </div>
 
 <div class="scores">
-    </div>
-        <h2 id="player1-name">Player 1</h2>
-        <h2>Score: </h2>
+  <div>
+    <h2 id="player1-name">Player 1</h2>
+    <h2>score: </h2>
+  </div>
+  <div>
+    <h2 id="player2-name">Player 2</h2>
+    <h2>score: </h2>
   </div>
 </div>
 
-<button id="next-round" onclick="window.location.
+  <button id="next-round" onclick="window.location.
 href = 'final-jeopardy.html'">Final Round</button>
 <!--linked "round-2.html" to "final-jeopardy.html"-->
+</div>
 
-<footer id="game-footer">Site Information</footer>
+<div class="footer">
+  <footer id="game-footer">Site Information</footer>
+</div>
 
-
-
-    <!-- Do not change the script source. Allows import/export to work. -->
-    <script src="./scripts/index.js" type="module"></script>
-  </body>
+<!-- Do not change the script source. Allows import/export to work. -->
+  <script src="./scripts/index.js" type="module"></script>
+</body>
 </html>

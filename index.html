@@ -6,17 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
     <title>Jeopardy</title>
+
+    <style> 
+      .options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
   </head>
+  <!--Centered my elements for my index.html page-->
+
   <body>
+    <div class="options">
     <h1>Welcome to Jeopardy</h1>
     <h2>America's Favorite Quiz Show!</h2>
-    <img src="https://www.ohio.edu/sites/ohio.edu.news/files/2021-03/Jeopardy_S37_OnSetLogo%20%28002%29.jpg" alt=""
-    width="600" height="500">
+    <img src="https://www.ohio.edu/sites/ohio.edu.news/files/2021-03/Jeopardy_S37_OnSetLogo%20%28002%29.jpg" alt="Jeopardy Logo"
+    width="700" height="500">
 
     <button onclick="window.location.href = 'round-1.html'">Play</button>
-
-    <footer>Site information</footer>
-
+  <div class="footer">
+    <footer>Site Information</footer>
+  </div>
+</div>
     <!-- Do not change the script source. Allows import/export to work. -->
     <script src="./scripts/index.js" type="module"></script>
   </body>

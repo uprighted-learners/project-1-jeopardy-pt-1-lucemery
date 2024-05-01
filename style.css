@@ -1,7 +1,9 @@
+/* Changed backround color for all of my pages. */
 body {
     background-color: rgb(31, 67, 189);
 }
 
+/* styling and positioning for "Second Round" & "Player Turn" etc. */
 .headers {
     color: white;
     display: flex;
@@ -11,6 +13,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Added styling for my "Lorem ipsum..." text. */
 p {
     color: white;
     background-color: darkblue;
@@ -21,9 +24,10 @@ p {
     margin-left: 28%;
     border: 1px solid black;
     font-size: 15px;
-    
-
+    font-family: 'Times New Roman', Times, serif;
 }
+
+/* Fixed positioning for my index.html text and <img>. */
 .intro {
     color: white;
     display: flex;
@@ -32,6 +36,7 @@ p {
     justify-content: center;
 }
 
+/* Fixed positioning for my <button>'s that link to the next page. */
 .play-button {
     display: flex;
     align-items: center;
@@ -40,6 +45,7 @@ p {
     margin-bottom: 60px;
 }
 
+/* Fixed positioning for my <button>'s on round-1.html & round-2.html. */
 .guess-pass-buttons {
     display: flex;
     flex-direction: row;
@@ -48,6 +54,7 @@ p {
     margin-bottom: 40px;
 }
 
+/* Fixed positioning for my <textarea>'s on final-jeopardy.html. */
 .final-answer {
     display: flex;
     flex-direction: column;
@@ -55,11 +62,16 @@ p {
     justify-content: center;
     margin-top: 50px;
 }
+
+/* Fixed positioning for my Player 1 & Player 2 <h2> elements. */
+/* This may be an unnessesary <div> but I will keep it in case I need to
+add another different <h2> element. */
 .scores {
     display: flex;
     justify-content: center;
 }
 
+/* Styling and positioning for my <h2> Player 1 and Player 2 scores. */
 h2 {
     background-color: rgb(80, 103, 218);
     display: flex;
@@ -72,6 +84,7 @@ h2 {
     font-size: 10pt;
 }
 
+/* Adjusted my footer display so it is similar to the example given. */
 .footer {
     display: block;
     width: 100%;
@@ -81,8 +94,10 @@ h2 {
     text-align: center;
     font-size: 40px;
 }
-/* adjusted my header display so it is similar to the example given */
 
+/* Ran into issues with positioning index.html footer. */
+/* Created different <div> for "index-footer" & "final-footer",
+though unnessesary, I got confused and kept it like this. */
 .index-footer {
     display: block;
     width: 100%;
@@ -93,8 +108,9 @@ h2 {
     font-size: 40px;
     margin-top: 150px;
 }
-/* ran into issues with positioning index.html footer */
 
+/* Same has "index-footer", made seperate adjustments so 
+that my positioning looks a bit better. */
 .final-footer {
     display: block;
     width: 100%;
@@ -106,6 +122,8 @@ h2 {
     margin-top: 550px;
 }
 
+/* Added correct grid properties & adjusted spacing
+and positioning for my grid layout. */
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -123,15 +141,16 @@ h2 {
     "question-25 question-26 question-27 question-28 question-29 question-30"
     ". . . . . .";
 }
-/* Added correct spacing to my container grid layout. */
-/* Finally figured out how to center my grid */
 
+/* Used recommended online resources to figure out how to
+add hover effect to my .container elements. */
 .container div:hover {
     transform: scale(1.1);
     border-color: gold;
 }
-/* Added hover effect to my .container elements */
 
+/* Added styling for each of my individual .container elements. */
+/* There is probably a less tedious way to do so but this works for now. */
 .Category-1 { grid-area: Category-1;
     color: white;
 }
@@ -275,38 +294,32 @@ h2 {
 .question-30 {
     color: gold;
 }
-/* Added styles to my constainer elements. There is 
-probably a less tedious way to do so but this will work for now.
-*/ 
 
+/* Added basic styling and positioning for my .container grid. */
 .container div {
     padding: 10px;
     border: 3px solid rgb(0, 0, 0);
     text-align: center;
     background-color: blue;
     font-size: 40px;
-}
-/* Added basic styles to my container grid layout. */
-
-.container div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: auto;
 }
-/* Centered my .container div */
 
+
+/* Styling and positoning for my "Final Category" text. */
 .final-category {
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 700px;
     margin-bottom: 50px;
-    margin-left: 31%;
+    margin-left: 25%;
     background-color: rgb(30, 103, 240);
     border: 3px solid black;
     color: white;
     font-size: 20px;
-    
 }

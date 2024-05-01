@@ -10,33 +10,86 @@ body {
     justify-content: center;
 }
 
+
+.intro {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guess-pass-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
 .scores {
     display: flex;
     justify-content: center;
 }
 
 h2 {
-    background-color: rgb(51, 77, 211);
+    background-color: rgb(80, 103, 218);
     display: flex;
-    grid-template-rows: 2fr 2fr;
-    padding: 5px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    font-size: 10pt;
 }
 
 .footer {
     display: block;
+    width: 100%;
     color: white;
     background-color: rgb(60, 60, 100);
     border: 3px solid black;
     text-align: center;
     font-size: 40px;
-    
 }
-.container {
+/* adjusted my header display so it is similar to the example given */
+
+.index-footer {
+    display: block;
     width: 100%;
+    color: white;
+    background-color: rgb(60, 60, 100);
+    border: 3px solid black;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 200px;
+}
+/* ran into issues with positioning index.html footer */
+
+.final-footer {
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: rgb(60, 60, 100);
+    border: 3px solid black;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 550px;
+}
+
+.container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 5px 5px;
+    width: 1200px;
+    margin: 0 auto;
     grid-auto-flow: row;
     grid-template-areas: 
     "Category-1 Category-2 Category-3 Category-4 Category-5 Category-6"
@@ -48,6 +101,13 @@ h2 {
     ". . . . . .";
 }
 /* Added correct spacing to my container grid layout. */
+/* Finally figured out how to center my grid */
+
+.container div:hover {
+    transform: scale(1.1);
+    border-color: gold;
+}
+/* Added hover effect to my .container elements */
 
 .Category-1 { grid-area: Category-1;
     color: white;

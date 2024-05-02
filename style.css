@@ -2,8 +2,8 @@
 body {
     background-color: rgb(31, 67, 189);
 }
-
-/* styling and positioning for "Second Round" & "Player Turn" etc. */
+    
+/* Basic styling and positioning for my page headers. */
 .headers {
     color: white;
     display: flex;
@@ -13,7 +13,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* Added styling for my "Lorem ipsum..." text. */
+/* Added styling and positioned my "Lorem ipsum..." text. */
 p {
     color: white;
     background-color: darkblue;
@@ -21,7 +21,9 @@ p {
     align-items: center;
     justify-content: center;
     max-width: 800px;
-    margin-left: 28%;
+    height: 100px;
+    margin-left: 24%;
+    text-align: center;
     border: 1px solid black;
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
@@ -36,13 +38,14 @@ p {
     justify-content: center;
 }
 
-/* Fixed positioning for my <button>'s that link to the next page. */
+/* Fixed positioning for my <button>'s that link to
+the next page and "bet" button. */
 .play-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 
 /* Fixed positioning for my <button>'s on round-1.html & round-2.html. */
@@ -54,10 +57,27 @@ p {
     margin-bottom: 40px;
 }
 
+/* Added specific adjustments to the input-box */
+.round-input-box {
+    margin-top: -120px;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Had to reluctantly keep this <div> to stop my content from moving. */
+.round-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Fixed positioning for my <textarea>'s on final-jeopardy.html. */
 .final-answer {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
@@ -119,7 +139,7 @@ that my positioning looks a bit better. */
     border: 3px solid black;
     text-align: center;
     font-size: 40px;
-    margin-top: 550px;
+    margin-top: 270px;
 }
 
 /* Added correct grid properties & adjusted spacing
@@ -317,7 +337,7 @@ add hover effect to my .container elements. */
     justify-content: center;
     max-width: 700px;
     margin-bottom: 50px;
-    margin-left: 25%;
+    margin-left: 27%;
     background-color: rgb(30, 103, 240);
     border: 3px solid black;
     color: white;

@@ -1,27 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>Jeopardy</title>
-  <style>
-    .round-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .headers {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  </style>
-
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Jeopardy</title>
   <script src="./scripts/index.js" type="module"></script>
 </head>
 <body>
@@ -29,7 +13,6 @@
     <h1>First Round</h1>
     <h1>Player Turn</h1>
   </div>
-
 
     <div class="container">
       <div class="Category-1">Category</div>
@@ -71,11 +54,14 @@
     </div>
 
 <div class="round-info">
-    <textarea name="message" id="input-box"></textarea>
-  
+    <div class="round-input-box">
+    <textarea name="message" id="input-box" 
+    style="width: 340px; height: 50px;"></textarea>
+    </div>
+
     <div class="guess-pass-buttons">
-      <button>Guess</button>
-      <button>Pass</button>
+      <button style="width: 170px; height: 50px;">Guess</button>
+      <button style="width: 170px; height: 50px;">Pass</button>
     </div>
 
   <div class="scores">
@@ -90,14 +76,14 @@
   </div>
 
   <div class="play-button">
-  <button id="next-round" onclick="window.location.
+  <button id="next-round" style="width: 150px; height: 50px;" onclick="window.location.
   href = 'round-2.html'">Next Round</button>
 <!--linked "round-1.html" to "round-2.html"-->
   </div>
 
-
-<div class="footer">
-  <footer id="game-footer">Site Information</footer>
+  <div class="footer">
+    <footer id="game-footer">Site Information</footer>
+  </div>
 </div>
 
 <!-- Do not change the script source. Allows import/export to work. -->

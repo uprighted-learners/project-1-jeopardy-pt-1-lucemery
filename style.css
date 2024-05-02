@@ -22,7 +22,7 @@ p {
     justify-content: center;
     max-width: 800px;
     height: 100px;
-    margin-left: 24%;
+    margin-left: 28%;
     text-align: center;
     border: 1px solid black;
     font-size: 15px;
@@ -337,7 +337,7 @@ add hover effect to my .container elements. */
     justify-content: center;
     max-width: 700px;
     margin-bottom: 50px;
-    margin-left: 27%;
+    margin-left: 31%;
     background-color: rgb(30, 103, 240);
     border: 3px solid black;
     color: white;

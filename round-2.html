@@ -1,15 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jeopardy</title>
-    <script src="./scripts/index.js" type="module"></script>
-  </head>
-  <body>
-    <h1>Second Round</h1>
-    <!-- Do not change the script source. Allows import/export to work. -->
-    <script src="./scripts/index.js" type="module"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Jeopardy</title>
+  <script src="./scripts/index.js" type="module"></script>
+</head>
+<body>
+    <div class="headers">
+      <h1>Second Round</h1>
+      <h1>Player Turn</h1>
+    </div>
+
+    <div class="container">
+      <div class="Category-1">Category</div>
+      <div class="Category-2">Category</div>
+      <div class="Category-3">Category</div>
+      <div class="Category-4">Category</div>
+      <div class="Category-5">Category</div>
+      <div class="Category-6">Category</div>
+      <div class="question-1">200</div>
+      <div class="question-2">200</div>
+      <div class="question-3">200</div>
+      <div class="question-4">200</div>
+      <div class="question-5">200</div>
+      <div class="question-6">200</div>
+      <div class="question-7">400</div>
+      <div class="question-8">400</div>
+      <div class="question-9">400</div>
+      <div class="question-10">400</div>
+      <div class="question-11">400</div>
+      <div class="question-12">400</div>
+      <div class="question-13">600</div>
+      <div class="question-14">600</div>
+      <div class="question-15">600</div>
+      <div class="question-16">600</div>
+      <div class="question-17">600</div>
+      <div class="question-18">600</div>
+      <div class="question-19">800</div>
+      <div class="question-20">800</div>
+      <div class="question-21">800</div>
+      <div class="question-22">800</div>
+      <div class="question-23">800</div>
+      <div class="question-24">800</div>
+      <div class="question-25">1000</div>
+      <div class="question-26">1000</div>
+      <div class="question-27">1000</div>
+      <div class="question-28">1000</div>
+      <div class="question-29">1000</div>
+      <div class="question-30">1000</div>
+    </div>
+  
+<div class="round-info">
+  <div class="round-input-box">
+  <textarea name="message" id="input-box"
+  style="width: 340px; height: 50px;"></textarea>
+  </div>
+
+  <div class="guess-pass-buttons">
+    <button style="width: 170px; height: 50px;">Guess</button>
+    <button style="width: 170px; height: 50px;">Pass</button>
+  </div>
+
+  <div class="scores">
+    <div>
+      <h2 id="player1-name">Player 1</h2>
+      <h2>score: </h2>
+    </div>
+    <div>
+      <h2 id="player2-name">Player 2</h2>
+      <h2>score: </h2> 
+    </div>
+  </div>
+
+  <div class="play-button">
+  <button id="next-round" style="width: 150px; height: 50px;" onclick="window.location.
+  href = 'final-jeopardy.html'">Final Round</button>
+<!--linked "round-2.html" to "final-jeopardy.html"-->
+  </div>
+
+  <div class="footer">
+    <footer id="game-footer">Site Information</footer>
+  </div>
+</div>
+
+<!-- Do not change the script source. Allows import/export to work. -->
+  <script src="./scripts/index.js" type="module"></script>
+</body>
 </html>

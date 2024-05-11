@@ -1,0 +1,345 @@
+/* Changed backround color for all of my pages. */
+body {
+    background-color: rgb(31, 67, 189);
+}
+    
+/* Basic styling and positioning for my page headers. */
+.headers {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Added styling and positioned my "Lorem ipsum..." text. */
+p {
+    color: white;
+    background-color: darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    height: 100px;
+    margin-left: 28%;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Fixed positioning for my index.html text and <img>. */
+.intro {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fixed positioning for my <button>'s that link to
+the next page and "bet" button. */
+.play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+/* Fixed positioning for my <button>'s on round-1.html & round-2.html. */
+.guess-pass-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Added specific adjustments to the input-box */
+.round-input-box {
+    margin-top: -120px;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Had to reluctantly keep this <div> to stop my content from moving. */
+.round-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fixed positioning for my <textarea>'s on final-jeopardy.html. */
+.final-answer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Fixed positioning for my Player 1 & Player 2 <h2> elements. */
+/* This may be an unnessesary <div> but I will keep it in case I need to
+add another different <h2> element. */
+.scores {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling and positioning for my <h2> Player 1 and Player 2 scores. */
+h2 {
+    background-color: rgb(80, 103, 218);
+    display: flex;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    font-size: 10pt;
+}
+
+/* Adjusted my footer display so it is similar to the example given. */
+.footer {
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: rgb(60, 60, 100);
+    border: 3px solid black;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Ran into issues with positioning index.html footer. */
+/* Created different <div> for "index-footer" & "final-footer",
+though unnessesary, I got confused and kept it like this. */
+.index-footer {
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: rgb(60, 60, 100);
+    border: 3px solid black;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 150px;
+}
+
+/* Same has "index-footer", made seperate adjustments so 
+that my positioning looks a bit better. */
+.final-footer {
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: rgb(60, 60, 100);
+    border: 3px solid black;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 270px;
+}
+
+/* Added correct grid properties & adjusted spacing
+and positioning for my grid layout. */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    width: 1200px;
+    margin: 0 auto;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "Category-1 Category-2 Category-3 Category-4 Category-5 Category-6"
+    "question-1 question-2 question-3 question-4 question-5 question-6"
+    "question-7 question-8 question-9 question-10 question-11 question-12"
+    "question-13 question-14 question-15 question-16 question-17 question-18"
+    "question-19 question-20 question-21 question-22 question-23 question-24"
+    "question-25 question-26 question-27 question-28 question-29 question-30"
+    ". . . . . .";
+}
+
+/* Used recommended online resources to figure out how to
+add hover effect to my .container elements. */
+.container div:hover {
+    transform: scale(1.1);
+    border-color: gold;
+}
+
+/* Added styling for each of my individual .container elements. */
+/* There is probably a less tedious way to do so but this works for now. */
+.Category-1 { grid-area: Category-1;
+    color: white;
+}
+
+.Category-2 { grid-area: Category-2; 
+    color: white;
+}
+
+.Category-3 { grid-area: Category-3;
+    color: white;
+}
+
+.Category-4 { grid-area: Category-4; 
+    color: white;
+}
+
+.Category-5 { grid-area: Category-5; 
+    color: white;
+}
+
+.Category-6 { grid-area: Category-6; 
+    color: white;
+}
+
+.question-1 {
+    color: gold;
+}
+
+.question-2 {
+    color: gold;
+}
+
+.question-3 {
+    color: gold;
+}
+
+.question-4 {
+    color: gold;
+}
+
+.question-5 {
+    color: gold;
+}
+
+.question-6 {
+    color: gold;
+}
+
+.question-7 {
+    color: gold;
+}
+
+.question-8 {
+    color: gold;
+}
+
+.question-9 {
+    color: gold;
+}
+
+.question-10 {
+    color: gold;
+}
+
+.question-11 {
+    color: gold;
+}
+
+.question-12 {
+    color: gold;
+}
+
+.question-13 {
+    color: gold;
+}
+
+.question-14 {
+    color: gold;
+}
+
+.question-15 {
+    color: gold;
+}
+
+.question-16 {
+    color: gold;
+}
+
+.question-17 {
+    color: gold;
+}
+
+.question-18 {
+    color: gold;
+}
+
+.question-19 {
+    color: gold;
+}
+
+.question-20 {
+    color: gold;
+}
+
+.question-21 {
+    color: gold;
+}
+
+.question-22 {
+    color: gold;
+}
+
+.question-23 {
+    color: gold;
+}
+
+.question-24 {
+    color: gold;
+}
+
+.question-25 {
+    color: gold;
+}
+
+.question-26 {
+    color: gold;
+}
+
+.question-27 {
+    color: gold;
+}
+
+.question-28 {
+    color: gold;
+}
+
+.question-29 {
+    color: gold;
+}
+
+.question-30 {
+    color: gold;
+}
+
+/* Added basic styling and positioning for my .container grid. */
+.container div {
+    padding: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    text-align: center;
+    background-color: blue;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+
+/* Styling and positoning for my "Final Category" text. */
+.final-category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    margin-bottom: 50px;
+    margin-left: 31%;
+    background-color: rgb(30, 103, 240);
+    border: 3px solid black;
+    color: white;
+    font-size: 20px;
+}

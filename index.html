@@ -4,11 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Jeopardy</title>
+
+    <style> 
+      .options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
   </head>
-  <body>
-    <h1>Welcome to Jeopardy!</h1>
-    <!-- Do not change the script source. Allows import/export to work. -->
-    <script src="./scripts/index.js" type="module"></script>
-  </body>
+  <!--Centered my elements for my index.html page.-->
+
+<body>
+    <div class="intro">
+    <h1>Welcome to Jeopardy</h1>
+    <h1>America's Favorite Quiz Show!</h1>
+    <img src="https://www.ohio.edu/sites/ohio.edu.news/files/2021-03/Jeopardy_S37_OnSetLogo%20%28002%29.jpg" alt="Jeopardy Logo"
+    width="700" height="500">
+    </div>
+    
+    <div class="play-button">
+    <button onclick="window.location. href = 'round-1.html'" 
+    style="width: 150px; height: 50px;">Play</button>
+    </div>
+
+  <div class="index-footer">
+    <footer>Site Information</footer>
+  </div>
+
+  <!-- Do not change the script source. Allows import/export to work. -->
+<script src="./scripts/index.js" type="module"></script>
+</body>
 </html>

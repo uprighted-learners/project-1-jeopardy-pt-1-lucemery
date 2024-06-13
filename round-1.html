@@ -21,36 +21,36 @@
       <div class="Category-4">Category</div>
       <div class="Category-5">Category</div>
       <div class="Category-6">Category</div>
-      <div class="question-1">100</div>
-      <div class="question-2">100</div>
-      <div class="question-3">100</div>
-      <div class="question-4">100</div>
-      <div class="question-5">100</div>
-      <div class="question-6">100</div>
-      <div class="question-7">200</div>
-      <div class="question-8">200</div>
-      <div class="question-9">200</div>
-      <div class="question-10">200</div>
-      <div class="question-11">200</div>
-      <div class="question-12">200</div>
-      <div class="question-13">300</div>
-      <div class="question-14">300</div>
-      <div class="question-15">300</div>
-      <div class="question-16">300</div>
-      <div class="question-17">300</div>
-      <div class="question-18">300</div>
-      <div class="question-19">400</div>
-      <div class="question-20">400</div>
-      <div class="question-21">400</div>
-      <div class="question-22">400</div>
-      <div class="question-23">400</div>
-      <div class="question-24">400</div>
-      <div class="question-25">500</div>
-      <div class="question-26">500</div>
-      <div class="question-27">500</div>
-      <div class="question-28">500</div>
-      <div class="question-29">500</div>
-      <div class="question-30">500</div>
+      <div class="Cat-1 question-1">100</div>
+      <div class="Cat-2 question-1">100</div>
+      <div class="Cat-3 question-1">100</div>
+      <div class="Cat-4 question-1">100</div>
+      <div class="Cat-5 question-1">100</div>
+      <div class="Cat-6 question-1">100</div>
+      <div class="Cat-1 question-2">200</div>
+      <div class="Cat-2 question-2">200</div>
+      <div class="Cat-3 question-2">200</div>
+      <div class="Cat-4 question-2">200</div>
+      <div class="Cat-5 question-2">200</div>
+      <div class="Cat-6 question-2">200</div>
+      <div class="Cat-1 question-3">300</div>
+      <div class="Cat-2 question-3">300</div>
+      <div class="Cat-3 question-3">300</div>
+      <div class="Cat-4 question-3">300</div>
+      <div class="Cat-5 question-3">300</div>
+      <div class="Cat-6 question-3">300</div>
+      <div class="Cat-1 question-4">400</div>
+      <div class="Cat-2 question-4">400</div>
+      <div class="Cat-3 question-4">400</div>
+      <div class="Cat-4 question-4">400</div>
+      <div class="Cat-5 question-4">400</div>
+      <div class="Cat-6 question-4">400</div>
+      <div class="Cat-1 question-5">500</div>
+      <div class="Cat-2 question-5">500</div>
+      <div class="Cat-3 question-5">500</div>
+      <div class="Cat-4 question-5">500</div>
+      <div class="Cat-5 question-5">500</div>
+      <div class="Cat-6 question-5">500</div>
     </div>
 
 <div class="round-info">
@@ -60,8 +60,8 @@
     </div>
 
     <div class="guess-pass-buttons">
-      <button style="width: 170px; height: 50px;">Guess</button>
-      <button style="width: 170px; height: 50px;">Pass</button>
+      <button id ="guessButton" style="width: 170px; height: 50px;">Guess</button>
+      <button id="passButton" style="width: 170px; height: 50px;">Pass</button>
     </div>
 
   <div class="scores">
@@ -76,7 +76,7 @@
   </div>
 
   <div class="play-button">
-  <button id="next-round" style="width: 150px; height: 50px;" onclick="window.location.
+  <button id="nextRound" style="width: 150px; height: 50px;" onclick="window.location.
   href = 'round-2.html'">Next Round</button>
 <!--linked "round-1.html" to "round-2.html"-->
   </div>
@@ -85,6 +85,20 @@
     <footer id="game-footer">Site Information</footer>
   </div>
 </div>
+
+
+<!-- PT2: Adding modal notification pop up for player turn -->
+<div id="popUp" class="turn-notification">
+  <div class="popup-content">
+    <button id="close-button">&times;</button>
+    <p>Player 1's turn</p>
+  </div>
+</div>
+
+<!-- PT2: 
+
+
+
 
 <!-- Do not change the script source. Allows import/export to work. -->
   <script src="./scripts/index.js" type="module"></script>
